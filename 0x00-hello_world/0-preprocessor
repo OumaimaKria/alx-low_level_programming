@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the CFILE environment variable
-C_FILE="$CFILE"
-
-# Run the C file through the preprocessor and save the output to a file
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -E "$C_FILE" -o c
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -E "$CFILE" -o c
